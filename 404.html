@@ -42,6 +42,9 @@
     <article>
       window.location.hostname = "spax.zone";
     </article>
+    <article who="spax" emotion="look">
+      (This is actually a lie but in essence it basically does that.)
+    </article>
     <article who="spax" emotion="smirk">
       Even if you don't program, you can see that it just changes the domain to "spax.zone", keeping the page you were on intact.
     </article>
@@ -56,7 +59,8 @@
     </article>
   </noscript>
   <script>
-    window.location.hostname = "spax.zone";
+    const path = window.location.pathname.match(/\/(.*?)(\.html)?/);
+    window.location = `https://spax.zone/${path[1]}`;
   </script>
 </body>
 </html>
