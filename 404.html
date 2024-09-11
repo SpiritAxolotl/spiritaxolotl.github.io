@@ -59,7 +59,7 @@
     </article>
   </noscript>
   <script>
-    const path = window.location.pathname.match(/\/(.*?)(\.html)?$/);
+    const path = window.location.pathname.match(/\/(.*?)(\.html)*$/);
     window.location = `https://spax.zone/${path[1]}`;
   </script>
 </body>
