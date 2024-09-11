@@ -4,18 +4,16 @@
     const path = window.location.pathname.match(/\/(.*?)(\.html)*$/);
     window.location = `https://spax.zone/${path[1]}`;
   </script>
+  <link rel="stylesheet" href="https://spax.zone/css/experimental.css">
   <noscript>
     <title>You unlocked secret dialogue...</title>
-    <link rel="stylesheet" href="https://spax.zone/css/experimental.css">
   </noscript>
   <style>
     html {
-      background-color: #306850;
+      background-color: var(--c3);
     }
-    noscript {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+    body noscript {
+      all: inherit;
     }
   </style>
 </head>
