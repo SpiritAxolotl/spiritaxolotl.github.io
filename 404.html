@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <head>
+  <script>
+    const path = window.location.pathname.match(/\/(.*?)(\.html)*$/);
+    window.location = `https://spax.zone/${path[1]}`;
+  </script>
   <noscript>
+    <title>You unlocked secret dialogue...</title>
     <link rel="stylesheet" href="https://spax.zone/css/experimental.css">
   </noscript>
   <style>
@@ -58,9 +63,5 @@
       Regardless! I hope you find the page you were looking for!
     </article>
   </noscript>
-  <script>
-    const path = window.location.pathname.match(/\/(.*?)(\.html)*$/);
-    window.location = `https://spax.zone/${path[1]}`;
-  </script>
 </body>
 </html>
